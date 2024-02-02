@@ -1,0 +1,35 @@
+class user
+{
+    public int a;
+    public int b;
+    public int c;
+
+    public void get()
+    {
+        console.WriteLine("Enter value of a=");
+        a=int.parse(console.ReadLine());
+        console.WriteLine("Enter value of b=");
+        b=int.parse(console.ReadLine());
+    }
+    public void sum()
+    {
+        c=a+b;
+    }
+    public void disp()
+    {
+        consloe.WriteLine("sum="+c);
+    }
+}
+internal class program
+{
+    static void main (string[])
+    {
+        user u=new user();
+        u.get();
+        u.sum();
+        u.disp();
+
+        console.ReadLine();
+
+    }
+}
